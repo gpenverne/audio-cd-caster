@@ -25,7 +25,6 @@ class Launcher():
                     ripit = subprocess.Popen(self.currentPath+"/play.sh", shell=True)
                     chromecasts = pychromecast.get_chromecasts()
                     cast = next(cc for cc in chromecasts if cc.device.friendly_name == self.config['chromecast_friendly_name'])
-                    ripit.communicate()
                     open("/tmp/acdcaster.pid", 'a').close()
                     while os.path.exists("/tmp/acdcaster.pid"):
                         self.playToChromecast(cast)
