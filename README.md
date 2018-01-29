@@ -26,7 +26,7 @@ sudo udevadm control --reload
 cp config.json.dist config.json
 ```
 
-## Configuration
+## Configuration
 
 Edit ``config.json`` file:
 
@@ -35,7 +35,7 @@ Edit ``config.json`` file:
 
 Edit ``/etc/udev/rules.d/99-play-disc-to-chrome-cast.rules`` and change the ``CHANGE_THIS_DIR`` value to point on your folder
 
-## Start it!
+## Start it!
 
 Launch launcher.py:
 
@@ -43,7 +43,7 @@ Launch launcher.py:
 python3 launcher.py
 ```
 
-## Start it at start!
+## Start it at start!
 ```shell
 crontab -e
 ```
