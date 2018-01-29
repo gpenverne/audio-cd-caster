@@ -14,7 +14,7 @@ class Launcher():
         self.cdDrive = cdDrive
         self.cdDrive.init()
         self.currentPath = os.path.dirname(os.path.realpath(__file__))
-        configFile = currentPath + "/config.json"
+        configFile = self.currentPath + "/config.json"
         self.config = json.loads(open(configFile, 'r').read())
 
     def start(self):
@@ -31,7 +31,7 @@ class Launcher():
                         time.sleep(1)
                         continue
 
-            time.sleep(5)
+            time.sleep(1)
 
     def playToChromecast(self, cast):
         for subdir, dirs, files in os.walk(self.currentPath):

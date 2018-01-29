@@ -33,6 +33,7 @@ Edit ``config.json`` file:
 - ``chromecast_friendly_name``: target chromecast to play audio
 - ``public_url_prefix``: the public url of the server.js server (needed by chromecast)
 
+Edit ``/etc/udev/rules.d/99-play-disc-to-chrome-cast.rules`` and change the ``CHANGE_THIS_DIR`` value to point on your folder
 
 ## Start it!
 
