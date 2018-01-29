@@ -5,7 +5,7 @@ var http = require('http'),
 var Finder = require('fs-finder');
 var exec = require('child_process').exec;
 var search = require('recursive-search');
-var config = JSON.parse(fs.readFileSync("config.json"));
+var config = JSON.parse(fs.readFileSync(__dirname+"/config.json"));
 
 http.createServer(function(req, res) {
     var results = [];
