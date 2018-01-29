@@ -1,0 +1,2 @@
+PyChromecast==1.0.3
+Pygame==1.9.3

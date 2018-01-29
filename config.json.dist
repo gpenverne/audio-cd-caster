@@ -1,0 +1,5 @@
+{
+    "chromecast_friendly_name": "TO_CHANGE",
+    "public_url_prefix": "http://YOUR-PUBLIC-IP:SOME-PORT/",
+    "public_port": 2000
+}

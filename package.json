@@ -1,0 +1,23 @@
+{
+  "name": "audio-cd-caster",
+  "version": "1.0.0",
+  "description": "Play audio cd to chromecast",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gpenverne/audio-cd-caster"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs-finder": "^1.8.1",
+    "http": "^0.0.0",
+    "recursive-search": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "gpenverne",
+  "license": "MIT"
+}
