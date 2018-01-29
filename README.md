@@ -50,7 +50,7 @@ crontab -e
 
 Add this line to your crontab:
 ```
-@reboot python /home/pi/mp3/laucher.py > /tmp/rip.log
+@reboot python3 /home/pi/mp3/laucher.py > /tmp/rip.log
 ```
 
 ## Details
