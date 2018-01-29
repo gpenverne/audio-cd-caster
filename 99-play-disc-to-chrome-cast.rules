@@ -1,1 +1,0 @@
-SUBSYSTEM=="block", KERNEL=="sr0", ENV{ID_CDROM_MEDIA_CD}=="1", ACTION=="remove", RUN+=CHANGE_THIS_DIR/stop.sh"
