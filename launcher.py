@@ -22,10 +22,9 @@ class Launcher():
             if self.cdDrive.get_empty() == False:
                 if self.cdDrive.get_track_audio(0) == True:
                     ripit = subprocess.Popen(self.currentPath+"/play.sh", shell=True)
-                    open("/tmp/acdcaster", 'a').close()
+                    open("/tmp/acdcaster.pid", 'a').close()
                     chromecasts = pychromecast.get_chromecasts()
                     cast = next(cc for cc in chromecasts if cc.device.friendly_name == "Salon")
-
                     while os.path.exists("/tmp/acdcaster.pid"):
                         self.playToChromecast(cast)
                         time.sleep(1)
