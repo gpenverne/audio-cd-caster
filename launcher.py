@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import subprocess
 import time
@@ -42,7 +42,7 @@ class Launcher():
                      mc = cast.media_controller
                      url=self.config['public_url_prefix']+str(time.time())+".wav"
                      mc.play_media(url, "audio/wav", "CD Audio")
-                     while mc.status.is_playing:
+                     while mc.is_playing:
                          time.sleep(1)
                          continue
 
