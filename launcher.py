@@ -45,7 +45,7 @@ class Launcher():
                      mc.play_media(url, "audio/wav", "CD Audio")
                      print("Chromecast is playing")
                      while not self.cdDrive.get_empty() and os.path.exists("/tmp/acdcaster.pid") and os.path.exists(filepath):
-                         echo "Waiting for end"
+                         print("Waiting for end")
                          time.sleep(1)
                          continue
                      print("Stopping")
